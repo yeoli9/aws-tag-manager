@@ -8,3 +8,10 @@
 - support runtimes: Python3.x
 
 ## Usage
+
+### use case 1
+
+- eventBridge Scheduler - lambda(tag-manager)
+     ㄴ--- ('0 * * * *')     ㄴ---- parameter-store (or secrets manager)
+
+### use case 2
