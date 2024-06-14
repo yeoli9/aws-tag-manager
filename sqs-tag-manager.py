@@ -29,8 +29,8 @@ sqs = boto3.client('sqs')
 queue_list = sqs.list_queues()['QueueUrls']
 databricks_queue = []
 
-tag_key = 'tag_key'                       # 원하는 값으로 설정하세요.
-tag_value = 'tag_value'                   # 원하는 값으로 설정하세요.
+tag_key = 'tag_key'                       # Set 'Key' what you need
+tag_value = 'tag_value'                   # Set 'Value' what you need
 
 
 for queue in queue_list:

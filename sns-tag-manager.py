@@ -32,8 +32,8 @@ sns = boto3.client('sns')
 topic_list = sns.list_topics()['Topics']
 databricks_topic_arns = []
 
-tag_key = 'tag_key'                       # 원하는 값으로 설정하세요.
-tag_value = 'tag_value'                   # 원하는 값으로 설정하세요.
+tag_key = 'tag_key'                       # Set 'Key' what you need
+tag_value = 'tag_value'                   # Set 'Value' what you need
 
 
 for topic in topic_list:
